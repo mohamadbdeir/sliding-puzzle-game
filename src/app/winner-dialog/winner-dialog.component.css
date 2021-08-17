@@ -1,0 +1,35 @@
+.winner
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name-input
+{
+    height: 2em;
+    margin-top: 1em;
+    border: 1px solid #e2e2e2;
+    outline: 0;
+
+}
+
+button
+{
+    margin-top: 1em;
+    padding: 1em 1em;
+    border-radius: 0.2em;
+    outline: none;
+    border: 0;
+    color: white;
+    
+}
+
+.cancel
+{
+    background-color: #9C0808;
+}
+
+.submit
+{
+    background-color: #06B61D;
+}

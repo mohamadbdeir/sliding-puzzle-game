@@ -1,0 +1,16 @@
+<div class="winner"
+     mat-dialog-content>
+     <h1>You won</h1>
+     <div class="time">Time: {{scoreService.hours
+          |number:'2.0'}}:{{scoreService.minutes|number:'2.0'}}:{{scoreService.seconds|number:'2.0'}} </div>
+     <div class="moves">Moves: {{scoreService.moves}}</div>
+
+     <input type="text"
+            class="name-input"
+            placeholder="enter your name"
+            [(ngModel)]="name" />
+
+            <button mat-button class="submit" (click)="submit()">Submit</button>
+            <button mat-button class="cancel" (click)="cancel()">Cancel</button>
+
+</div>    

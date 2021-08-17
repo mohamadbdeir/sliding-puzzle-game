@@ -1,0 +1,26 @@
+<div class="container">
+    <button class="start"
+            *ngIf="!started"
+            (click)="start()">Start</button>
+    <button class="pause"
+            *ngIf="started && !paused"
+            (click)="pause()">Pause</button>
+    <button class="resume"
+            *ngIf="started && paused"
+            (click)="resume()">Resume</button>
+  <!--  <button class="clicks"
+            (click)="openDialog()">test</button>-->
+    <div class="info">
+        <div class="time">
+            <span class="hours"
+                  *ngIf="hours > 0">{{hours | number:'2.0'}}:</span>
+            {{minutes | number:'2.0'}}:{{seconds |
+            number:'2.0'}}
+        </div>
+        <div class="clicks">Moves: {{numberOfClicks}}</div>
+    </div>
+
+    <app-grid (click)="click()"></app-grid>
+
+
+</div>

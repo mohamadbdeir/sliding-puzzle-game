@@ -1,0 +1,41 @@
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    background-color: #518f8fd2;
+    margin-top: 9em;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+button {
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+    outline: 0;
+    border: 0;
+    background-color: #0478fda8;
+    width: 75%;
+    transition: all 0.2s;
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+button+button {
+    margin-top: 0.5em;
+}
+
+button:hover {
+    transform: scale(1.2);
+}

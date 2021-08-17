@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="scores">
+
+        <button [routerLink]="['/']">Back to main menu</button>
+
+        <div class="sortBy">
+            <h3>Sort scores by: </h3>
+            <div class="moves">
+                <label for="moves">number of moves</label>
+                <input type="radio"
+                       id="moves"
+                       checked
+                       name="sortBy"
+                       value="moves"
+                       [(ngModel)]="sortBy"
+                       (click)="loadScores()" />
+            </div>
+
+            <div class="time">
+                <label for="time">time</label>
+                <input type="radio"
+                       id="time"
+                       name="sortBy"
+                       value="time"
+                       [(ngModel)]="sortBy"
+                       (click)="loadScores()" />
+            </div>
+        </div>
+
+        <div class="data">
+            <table>
+                <tr *ngFor="let score of scores">
+                    <td
+                        [ngClass]="{'first':scores.indexOf(score)==0, 'second': scores.indexOf(score)==1, 'third':scores.indexOf(score)==2}">
+                        {{scores.indexOf(score)+1}}</td>
+                    <td>{{score.name}}</td>
+                    <td>{{score.time}}</td>
+                    <td>{{score.moves}}</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+    </div>
+
+
+</div>

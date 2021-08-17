@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 21em;
+    height: 21em;
+    justify-content: center;
+}
+
+@media (max-width: 400px) {
+    .grid {
+        width: 9em;
+        height: 9em;
+        margin: 0;
+    }
+}
