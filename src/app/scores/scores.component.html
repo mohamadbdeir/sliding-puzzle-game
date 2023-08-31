@@ -26,6 +26,9 @@
                        (click)="loadScores()" />
             </div>
         </div>
+        <img *ngIf="loading"
+             class="loading"
+             src="assets/images/loader_ring.gif" />
 
         <div class="data">
             <table>

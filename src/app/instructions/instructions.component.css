@@ -1,0 +1,43 @@
+@media(min-width: 600px)
+{
+    .instructions
+    {
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+}
+.instructions{
+    background-color: beige;
+    border-radius: 0.5em;
+    padding: 2em;
+    font-size: 1.2em;
+
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vw;
+    margin: 2em auto;
+    flex-direction: column;
+
+}
+
+button
+{
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+    outline: 0;
+    border: 0;
+    background-color: #0478fda8;
+    transition: all 0.2s;
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+button:hover {
+    transform: scale(1.2);
+}

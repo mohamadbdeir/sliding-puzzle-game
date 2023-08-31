@@ -30,12 +30,24 @@ h3 {
     margin-top: 1em;
 }
 
-
-
 td {
     padding: 0.5em 2em;
     border-bottom: 0.5px solid rgb(226, 135, 135);
+}
+
+@media (max-width:600px) {
     
+    td {
+        padding: 0.5em 1em;
+        
+    }
+
+    .scores
+    {
+     margin: 2em 0;
+     max-width: 80vw;
+     
+    }
 }
 
 .first {
@@ -53,10 +65,9 @@ td {
     background: linear-gradient(213deg, rgba(205, 127, 50, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(205, 127, 50, 1) 62%);
 }
 
-button
-{
+button {
     border-radius: 0.3em;
-    background-color:#2585DA;
+    background-color: #2585DA;
     color: white;
     border: 0;
     outline: 0;
@@ -64,8 +75,11 @@ button
     transition: all 0.2s;
 }
 
-button:hover
-{
-
+button:hover {
     transform: scale(1.1);
+}
+
+.loading {
+    width: 10em;
+    height: 10em;
 }

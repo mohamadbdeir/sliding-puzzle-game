@@ -10,7 +10,7 @@
             placeholder="enter your name"
             [(ngModel)]="name" />
 
-            <button mat-button class="submit" (click)="submit()">Submit</button>
+            <button mat-button class="submit" (click)="submit()"  [ngClass]="name==='' ? 'disabled' : 'enabled' ">Submit</button>
             <button mat-button class="cancel" (click)="cancel()">Cancel</button>
 
 </div>    

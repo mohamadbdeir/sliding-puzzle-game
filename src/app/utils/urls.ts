@@ -1,0 +1,1 @@
+export const baseUrl = 'http://mohamadbdeir-001-site1.btempurl.com/api/'

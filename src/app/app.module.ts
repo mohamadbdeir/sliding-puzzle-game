@@ -16,6 +16,7 @@ import { ScoresComponent } from './scores/scores.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NameExistsDialogComponent } from './name-exists-dialog/name-exists-dialog.component';
+import { InstructionsComponent } from './instructions/instructions.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { NameExistsDialogComponent } from './name-exists-dialog/name-exists-dial
     MainMenuComponent,
     ScoresComponent,
     NameExistsDialogComponent,
+    InstructionsComponent,
 
   ],
   imports: [
